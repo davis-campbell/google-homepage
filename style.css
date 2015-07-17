@@ -10,24 +10,55 @@ a:link {
 	text-decoration:none;
 }
 
+a:visited {
+color:inherit;
+}
+
 a:hover {
 	text-decoration:underline;
+}
+
+a:active {
+color:inherit;
+}
+
+#button:hover {
+text-decoration:none;
 }
 
 /* Header Styles */
 
 header{
 	height:100px;
+	font-size:.8em;
 }
 
 header  ul{
 	float:right;
 	margin-right:20px;
+	padding: 5px;
 }
 
 header li {
 	display: inline;
-	padding-right:4px;
+	padding-right:10px;
+}
+
+header .button {
+	box-sizing:border-box;
+	width:71px;
+	height:30px;
+	background-image: -webkit-linear-gradient(top, rgb(67, 135, 253), rgb(70, 131, 234));
+	display:inline;
+	color:white;
+	font-size:1em;
+	padding: 5px 13px;
+	border-radius:2px;
+	font-weight: 600;
+}
+
+.button:hover {
+box-shadow: 1px 1px 3px 0px rgba(120,120,120,0.75);
 }
 
 /* Main Styles */
@@ -47,9 +78,10 @@ main input {
 	display:block;
 }
 
-main div {
-	width: 175px;
+main > div {
+	width: 250px;
 	margin:auto;
+	font-size: .8em;
 }
 
 #search {
@@ -58,6 +90,18 @@ float:left;
 
 #lucky {
 float:right;
+}
+
+main .button {
+	display:inline-block;
+	background-color: rgb(245, 245, 245);
+	background-image: -webkit-linear-gradient(top, rgb(245, 245, 245), rgb(241, 241, 241));
+	padding: 7px 10px;
+	border-radius:3px;
+	border-style:solid;
+	border-width: 1px;
+	border-color: rgb(200,200,200);
+	color:black;
 }
 
 /* Footer Styles */
